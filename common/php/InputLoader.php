@@ -15,7 +15,7 @@ class InputLoader
      */
     public function getAsStrings() : array
     {
-        return explode(PHP_EOL, $this->getAsString());
+        return array_filter(explode(PHP_EOL, $this->getAsString()));
     }
 
     /**
