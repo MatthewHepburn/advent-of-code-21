@@ -1,2 +1,2 @@
 input.txt
-rust/target/*
+*/rust/target/*
