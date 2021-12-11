@@ -4,8 +4,6 @@ require_once __DIR__ . '/../../common/php/InputLoader.php';
 require_once __DIR__ . '/../../common/php/StandardLib.php';
 require_once __DIR__ . '/common.php';
 
-$logger = new Logger();
-
 $inputStrings = (new InputLoader(__DIR__))->getAsStrings();
 $map = Map::fromInput($inputStrings);
 
