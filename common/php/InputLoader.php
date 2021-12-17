@@ -30,4 +30,21 @@ class InputLoader
 
         return $output;
     }
+
+    /**
+     * @return string[][]
+     */
+    public function getAsCharArray() : array
+    {
+        $output = [];
+        foreach ($this->getAsStrings() as $string) {
+            $line = [];
+            foreach (str_split($string) as $char) {
+                $line []= $char;
+            }
+            $output[]= $line;
+        }
+
+        return $output;
+    }
 }
