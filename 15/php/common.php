@@ -117,6 +117,16 @@ class Map
         return $possibleMoves;
     }
 
+    public function getRiskMap(): string
+    {
+        $output = '';
+        foreach ($this->riskMap as $line) {
+            $output .= implode("\t", $line) . "\n";
+        }
+
+        return $output;
+    }
+
     public function getCostMap(): string
     {
         $output = '';
